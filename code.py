@@ -1,15 +1,27 @@
+'''
+Description: To create the text file of given pattern and to display number of searched words repeated
+
+Author: Sharath Neelappa Saunshi
+
+Ps No : 99003765
+
+Date  : 22/02/2021
+
+
+'''
+
 import re
-
-
 class Find_Word:
 
     def __init__(self, pattern, f):
         self.pattern = pattern
         self.f = f
 
+
     def pattern_search(self,):
 
         count = 0
+        
         match = re.findall(self.pattern, self.f, re.M | re.I)
         extension = ".txt"
         file_name = str(self.pattern) + extension
@@ -30,8 +42,10 @@ class Find_Word:
 
 if __name__ == '__main__':
 
+
     with open('input.txt') as input_file:
         read_file = input_file.read()
+        
     for x in range(5):
         keyword = input("Enter the keyword you wanted to search in file:")
         d = Find_Word(keyword, read_file)

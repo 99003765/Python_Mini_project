@@ -41,5 +41,6 @@ if __name__ == '__main__':  # creating main
         read_file = input_file.read()  # reading innput file
     for x in range(5):  # Searching for maximum 5 words at a stretch
         keyword = input("Enter the keyword you wanted to search in file:")
-d = Find_Word(keyword, read_file)   # creation of objects and pointing to class
-d.pattern_search()      
+        d = Find_Word(keyword, read_file)  # creating objects,pointing to class
+        d.pattern_search()      
+    

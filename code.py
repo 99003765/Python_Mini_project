@@ -19,7 +19,7 @@ class Find_Word():
         split_f = self.f.split()
         f = open(file_name, "a+")
         for i in range(len(split_file_text)):
-            match = re.match(self.keyword_given, split_file_text[i], re.M | re.I)
+            match = re.match(self.pattern, split_file_text[i], re.M | re.I)
             if match:
                 count += 1
                 x = (split_f[i-1]+" "+split_f[i]+" "+split_f[i+1]+"\n")

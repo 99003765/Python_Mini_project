@@ -15,7 +15,7 @@ class Find_Word:  # creating class
     def __init__(self, pattern, f):  # initialising variables
         self.pattern = pattern
         self.f = f
-    def pattern_search(self,):  # Creating methods for pattern search
+    def pattern_search(self):  # Creating methods for pattern search
         count = 0  # Initialising search count to zero
         match = re.findall(self.pattern, self.f, re.M | re.I)
         # Searching for given pattern and ignoring cases
